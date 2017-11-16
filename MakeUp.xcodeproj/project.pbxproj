@@ -10,6 +10,7 @@
 		74EF77221FBC312D007DDEA4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF77211FBC3121007DDEA4 /* Accelerate.framework */; };
 		74EF77241FBC313D007DDEA4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF77231FBC3135007DDEA4 /* CoreMedia.framework */; };
 		74EF77261FBC350B007DDEA4 /* shape_predictor_68_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = 74EF77251FBC34E7007DDEA4 /* shape_predictor_68_face_landmarks.dat */; };
+		74EF77471FBD3778007DDEA4 /* Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF77461FBD3778007DDEA4 /* Draw.m */; };
 		74F01AB71FBC0B780071FE03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F01AB61FBC0B780071FE03 /* AppDelegate.swift */; };
 		74F01AB91FBC0B780071FE03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F01AB81FBC0B780071FE03 /* ViewController.swift */; };
 		74F01ABC1FBC0B780071FE03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F01ABA1FBC0B780071FE03 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		74EF77211FBC3121007DDEA4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		74EF77231FBC3135007DDEA4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		74EF77251FBC34E7007DDEA4 /* shape_predictor_68_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = shape_predictor_68_face_landmarks.dat; sourceTree = "<group>"; };
+		74EF77451FBD3778007DDEA4 /* Draw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Draw.h; sourceTree = "<group>"; };
+		74EF77461FBD3778007DDEA4 /* Draw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Draw.m; sourceTree = "<group>"; };
 		74F01AB31FBC0B780071FE03 /* MakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F01AB61FBC0B780071FE03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F01AB81FBC0B780071FE03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				74F01ACC1FBC0C6D0071FE03 /* MakeUp-Bridging-Header.h */,
 				74F01ACD1FBC0C6D0071FE03 /* DlibWrapper.h */,
 				74F01ACE1FBC0C6D0071FE03 /* DlibWrapper.mm */,
+				74EF77451FBD3778007DDEA4 /* Draw.h */,
+				74EF77461FBD3778007DDEA4 /* Draw.m */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74EF77471FBD3778007DDEA4 /* Draw.m in Sources */,
 				74F01ACF1FBC0C6D0071FE03 /* DlibWrapper.mm in Sources */,
 				74F01AB91FBC0B780071FE03 /* ViewController.swift in Sources */,
 				74F01AC91FBC0C2A0071FE03 /* SessionHandler.swift in Sources */,

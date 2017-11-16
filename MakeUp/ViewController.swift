@@ -42,7 +42,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
       let toObjC = NSValue(cgRect: metadataObject.bounds)
       return toObjC
     }
-    wrapper?.doWork(on: sampleBuffer, inRects: bounds)
+//    wrapper?.doWork(on: sampleBuffer, inRects: bounds)
+    wrapper?.draw(on: sampleBuffer, inRects: bounds)
     layer.enqueue(sampleBuffer)
   }
 
@@ -76,7 +77,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
       session.addOutput(metaOutput)
     }
     session.commitConfiguration()
-    output.videoSettings = [kCVPixelBufferPixelFormatTypeKey as AnyHashable: Int(kCVPixelFormatType_32BGRA)]
+    output.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
     let connection = output.connection(withMediaType: AVMediaTypeVideo)
     connection?.videoOrientation = .portrait
     metaOutput.metadataObjectTypes = [AVMetadataObjectTypeFace]
