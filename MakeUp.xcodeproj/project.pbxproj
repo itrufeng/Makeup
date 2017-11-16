@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74EF77221FBC312D007DDEA4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF77211FBC3121007DDEA4 /* Accelerate.framework */; };
+		74EF77241FBC313D007DDEA4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF77231FBC3135007DDEA4 /* CoreMedia.framework */; };
+		74EF77261FBC350B007DDEA4 /* shape_predictor_68_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = 74EF77251FBC34E7007DDEA4 /* shape_predictor_68_face_landmarks.dat */; };
 		74F01AB71FBC0B780071FE03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F01AB61FBC0B780071FE03 /* AppDelegate.swift */; };
 		74F01AB91FBC0B780071FE03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F01AB81FBC0B780071FE03 /* ViewController.swift */; };
 		74F01ABC1FBC0B780071FE03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F01ABA1FBC0B780071FE03 /* Main.storyboard */; };
 		74F01ABE1FBC0B780071FE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F01ABD1FBC0B780071FE03 /* Assets.xcassets */; };
 		74F01AC11FBC0B780071FE03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F01ABF1FBC0B780071FE03 /* LaunchScreen.storyboard */; };
+		74F01AC91FBC0C2A0071FE03 /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F01AC81FBC0C2A0071FE03 /* SessionHandler.swift */; };
+		74F01ACF1FBC0C6D0071FE03 /* DlibWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 74F01ACE1FBC0C6D0071FE03 /* DlibWrapper.mm */; };
+		74F022F81FBC0E4B0071FE03 /* libdlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F020F81FBC0E4A0071FE03 /* libdlib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74EF77211FBC3121007DDEA4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		74EF77231FBC3135007DDEA4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		74EF77251FBC34E7007DDEA4 /* shape_predictor_68_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = shape_predictor_68_face_landmarks.dat; sourceTree = "<group>"; };
 		74F01AB31FBC0B780071FE03 /* MakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F01AB61FBC0B780071FE03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F01AB81FBC0B780071FE03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,11 @@
 		74F01ABD1FBC0B780071FE03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F01AC01FBC0B780071FE03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74F01AC21FBC0B780071FE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F01AC81FBC0C2A0071FE03 /* SessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHandler.swift; sourceTree = "<group>"; };
+		74F01ACC1FBC0C6D0071FE03 /* MakeUp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MakeUp-Bridging-Header.h"; sourceTree = "<group>"; };
+		74F01ACD1FBC0C6D0071FE03 /* DlibWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DlibWrapper.h; sourceTree = "<group>"; };
+		74F01ACE1FBC0C6D0071FE03 /* DlibWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DlibWrapper.mm; sourceTree = "<group>"; };
+		74F020F81FBC0E4A0071FE03 /* libdlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdlib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74EF77241FBC313D007DDEA4 /* CoreMedia.framework in Frameworks */,
+				74EF77221FBC312D007DDEA4 /* Accelerate.framework in Frameworks */,
+				74F022F81FBC0E4B0071FE03 /* libdlib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74EF77201FBC3121007DDEA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74EF77231FBC3135007DDEA4 /* CoreMedia.framework */,
+				74EF77211FBC3121007DDEA4 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74F01AAA1FBC0B780071FE03 = {
 			isa = PBXGroup;
 			children = (
 				74F01AB51FBC0B780071FE03 /* MakeUp */,
 				74F01AB41FBC0B780071FE03 /* Products */,
+				74EF77201FBC3121007DDEA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,15 +81,45 @@
 		74F01AB51FBC0B780071FE03 /* MakeUp */ = {
 			isa = PBXGroup;
 			children = (
+				74F01ACB1FBC0C5A0071FE03 /* Swift */,
+				74F01ACA1FBC0C520071FE03 /* OC */,
 				74F01AB61FBC0B780071FE03 /* AppDelegate.swift */,
 				74F01AB81FBC0B780071FE03 /* ViewController.swift */,
 				74F01ABA1FBC0B780071FE03 /* Main.storyboard */,
 				74F01ABD1FBC0B780071FE03 /* Assets.xcassets */,
 				74F01ABF1FBC0B780071FE03 /* LaunchScreen.storyboard */,
 				74F01AC21FBC0B780071FE03 /* Info.plist */,
+				74F01AC81FBC0C2A0071FE03 /* SessionHandler.swift */,
+				74F01AD01FBC0E480071FE03 /* lib */,
 			);
 			path = MakeUp;
 			sourceTree = "<group>";
+		};
+		74F01ACA1FBC0C520071FE03 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				74F01ACC1FBC0C6D0071FE03 /* MakeUp-Bridging-Header.h */,
+				74F01ACD1FBC0C6D0071FE03 /* DlibWrapper.h */,
+				74F01ACE1FBC0C6D0071FE03 /* DlibWrapper.mm */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		74F01ACB1FBC0C5A0071FE03 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		74F01AD01FBC0E480071FE03 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				74EF77251FBC34E7007DDEA4 /* shape_predictor_68_face_landmarks.dat */,
+				74F020F81FBC0E4A0071FE03 /* libdlib.a */,
+			);
+			path = lib;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -96,6 +153,7 @@
 				TargetAttributes = {
 					74F01AB21FBC0B780071FE03 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,6 +184,7 @@
 				74F01AC11FBC0B780071FE03 /* LaunchScreen.storyboard in Resources */,
 				74F01ABE1FBC0B780071FE03 /* Assets.xcassets in Resources */,
 				74F01ABC1FBC0B780071FE03 /* Main.storyboard in Resources */,
+				74EF77261FBC350B007DDEA4 /* shape_predictor_68_face_landmarks.dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F01ACF1FBC0C6D0071FE03 /* DlibWrapper.mm in Sources */,
 				74F01AB91FBC0B780071FE03 /* ViewController.swift in Sources */,
+				74F01AC91FBC0C2A0071FE03 /* SessionHandler.swift in Sources */,
 				74F01AB71FBC0B780071FE03 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,12 +335,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CKGWJSMEES;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DLIB_NO_GUI_SUPPORT,
+					DLIB_JPEG_SUPPORT,
+					NDEBUG,
+					DLIB_USE_BLAS,
+					DLIB_USE_LAPACK,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib\"";
 				INFOPLIST_FILE = MakeUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/lib\"",
+					"$(PROJECT_DIR)/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ldlib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itrufeng.MakeUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MakeUp/OC/MakeUp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -288,12 +370,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CKGWJSMEES;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DLIB_NO_GUI_SUPPORT,
+					DLIB_JPEG_SUPPORT,
+					NDEBUG,
+					DLIB_USE_BLAS,
+					DLIB_USE_LAPACK,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib\"";
 				INFOPLIST_FILE = MakeUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/lib\"",
+					"$(PROJECT_DIR)/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ldlib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itrufeng.MakeUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "MakeUp/OC/MakeUp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
